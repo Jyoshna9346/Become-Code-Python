@@ -1,0 +1,44 @@
+'''
+def findmin(n,data):
+    s,c=data[0],0
+    for i in data:
+        if s==i:
+            c+=1
+        if s>i:
+            s=i
+            c=1
+    ind=[s,c]
+    for i in range(n):
+        if s==data[i]:
+            ind.append(i)
+    return ind 
+
+n=int(input())
+data=list(map(int,input().split()))
+minval=findmin(n,data)
+print(*minval)
+
+'''
+
+or
+
+'''
+def findmin(n,data):
+    s=min(data)
+    c=data.count(s)
+    ind=[s,c]
+    for i in range(n):
+        if s==data[i]:
+            ind.append(i)
+    return ind 
+
+n=int(input())
+data=list(map(int,input().split()))
+minval=findmin(n,data)
+print(*minval)
+'''
+
+ =============================================
+10
+45 13 431 171 184 13 21 13 33 13
+13 4 1 5 7 9

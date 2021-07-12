@@ -124,3 +124,17 @@ def fun(n):
     print(n)
 n=int(input())
 fun(n)
+input = 6
+2
+2
+3
+4
+2
+3
+2
+2
+3
+4
+5
+6
+
